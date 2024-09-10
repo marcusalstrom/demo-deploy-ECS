@@ -7,7 +7,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "containerPort": 5000,
+                    "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
                     "name": "demo-deploy-80-tcp",
