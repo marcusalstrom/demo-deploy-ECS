@@ -2,11 +2,11 @@
     <script>
     function swapText() {
         const opts = ["DevOps is where its at yo!", "I eat bugs for breakfast", "I much prefer this to my old job", "Spoon is NOT the best Java source code analyser in the world!"];
-        let i = Math.floor(Math.random() * 4);
-        console.log(opts[i]);
-        console.log(document.getElementById("demo").innerText);
+        if (window.global_text_counter == null) {window.global_text_counter = -1}
+        window.global_text_counter += 1;
+        let i = window.global_text_counter;
         document.getElementById("demo").innerText = opts[i];
-        console.log(document.getElementById("demo").innerText);
+        if (window.global_text_counter == 3) {window.global_text_counter = -1}
     }
     </script>
     <h1 id="demo"> Hello! I am a truth telling bird</h1>
