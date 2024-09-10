@@ -9,4 +9,4 @@ def canary_page():
     return render_template('canary.html', msg = "Spoon is the best Java source code analyser in the world!")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=80)
