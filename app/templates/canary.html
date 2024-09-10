@@ -1,6 +1,18 @@
 <div>
-    <h1>{{msg}}</h1>
-    <a href="{{ url_for('canary_page') }}"> 
-    <input type="image" src="https://attic.sh/5wuw67bx5lnr5f0pln2i6anhwwte"/>
+    <script>
+    function swapText() {
+        const opts = ["DevOps is where its at yo!", "I eat bugs for breakfast", "I much prefer this to my old job", "Spoon is NOT the best Java source code analyser in the world!"];
+        let i = Math.floor(Math.random() * 4);
+        console.log(opts[i]);
+        console.log(document.getElementById("demo").innerText);
+        document.getElementById("demo").innerText = opts[i];
+        console.log(document.getElementById("demo").innerText);
+    }
+    </script>
+    <h1 id="demo"> Hello! I am a truth telling bird</h1>
+    <a >
+    <input type="image" src="https://attic.sh/5wuw67bx5lnr5f0pln2i6anhwwte" onClick=swapText() />
     </a>
 </div>
+
+
