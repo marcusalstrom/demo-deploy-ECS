@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def canary_page():
-    return render_template('canary_v1.html')
+    return render_template('canary_v2.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
