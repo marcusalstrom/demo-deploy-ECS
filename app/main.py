@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from itertools import cycle
 
 app = Flask(__name__)
 
